@@ -5,44 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Starwars Game</title>
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <title>Crystal Game</title>
 </head>
 
 <body>
-    <h1>Star Wars RPG!</h1>
+    <h1>Crystal Collector</h1>
 
-    <div class="char-div" id="friend-div">
-        <div class="characters" id="ObiWan">
-            <p>Obi-Wan Kenobi</p>
-            <img src="..." alt="?">
-            <p>120</p>
-        </div>
-        <div class="characters" id="Luke">
-            <p>Luke Skywaker</p>
-            <img src="..." alt="?">
-            <p>100</p>
-        </div>
-        <div class="characters" id="Sidious">
-            <p>Darth Sidious</p>
-            <img src="..." alt="?">
-            <p>150</p>
-        </div>
-        <div class="characters" id="Maul">
-            <p>Darth Maul</p>
-            <img src="..." alt="?">
-            <p>180</p>
-        </div>
+    <div>
+        <p>Crystal Collector Game is an simple game.</p>
+        <p>You have four crystals thay you dont know the values of and a value you have to match.</p>
+        <p>Your mission is to find out the values of the crystals and match your score to the value displayed so you can win.</p>
 
-        <h4>Your Character</h4>
     </div>
-    <div class="char-div" id="enemy-div">
 
-        <h4>Enemies Available to Attack</h4>
-    </div>
-    <div class="char-div" id="defender-div">
+    <div id="crystals">
 
-        <h4>Defender</h4>
+        <div class="crystal"id="blue-crystal" value="0">
+            <img id="blue" src="https://via.placeholder.com/100" alt="Blue Crystal" height = "100px" width="100px">
+        </div>
+        <div class="crystal" id="red-crystal" value="0">
+            <img id="red" src="https://via.placeholder.com/100" alt="Red Crystal" height = "100px" width="100px">
+        </div>
+        <div class="crystal" id="green-crystal" value="0">
+            <img id="green" src="https://via.placeholder.com/100" alt="Green Crystal" height = "100px" width="100px">
+        </div>
+        <div class="crystal" id="purple-crystal" value="0">
+            <img id="purple" src="./assets/images/PurpleCrystal.jpg" alt="Purple Crystal" height = "100px" width="100px">
+        </div>
+
+
     </div>
+
+    <div id="compDiv"></div>
+    <div id="winLoseDiv">
+        <h2 id = "win"></h2>
+        <h2 id = "lose"></h2>
+    </div>
+    <div id = "scoreDiv"> </div>
+    <script src="./assets/javascript/game.js"></script>
 </body>
 
 </html>
