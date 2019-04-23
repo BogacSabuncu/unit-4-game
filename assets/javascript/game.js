@@ -16,34 +16,35 @@ $(document).ready(function () {
         });
 
         comPic = randInterval(19, 120);
+
+        score = 0;
+        $("#usrVal").text(score);
+        $("#compDisp").text(comPic);
+        
     }
 
-    changeValue();
-
-
-    $("#scoreDiv").append(`<h2> Score : ${score}  </h2>`);
+    $("#usrVal").append(score);
     $("#win").append(`Wins : ${loseCount} `);
     $("#lose").append(`Loses : ${winCount} `);       
-    $("#compDiv").append(`<h2> Computer Pick : ${comPic} </h2>`);
+
+    changeValue();
 
     $("#crystals").on("click", ".crystal", function(){
         let gem_value = $(this).attr("value");
         score += parseInt(gem_value);
 
         if(score === comPic){
-            score = 0;
             winCount++;
             $("#win").text(`Wins : ${winCount} `);
             changeValue();
         }
         else if(score > comPic){
-            score = 0;
             loseCount++;
             $("#lose").text(`Loses : ${loseCount} `); 
             changeValue();
         }
 
-        $("#scoreDiv").text(`Score : ${score}`);
+        $("#usrVal").text(score);
     });
 
 

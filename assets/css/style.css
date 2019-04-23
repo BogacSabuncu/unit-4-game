@@ -3,3 +3,89 @@
     float: left;
     margin: 20px;
 }
+
+h1
+{
+    font-weight: bolder;
+    font-size: 30pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 10px;
+    padding: 10px;
+    background-color: burlywood;
+    text-align: center;
+}
+
+body
+{
+    background-image: url(../images/dynamic-style.png); 
+}
+
+#infoDiv
+{
+    margin: 10px;
+    padding: 20px;
+    font-size: 16pt;
+    line-height: 20pt;
+    background-color: blanchedalmond;
+}
+
+#compDiv
+{
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    font-size: 16pt;
+    line-height: 20pt;
+    background-color: blanchedalmond;
+    width: 28%;
+}
+
+h2
+{
+    padding: 10px;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+#compDisp
+{
+    padding-top: 20px;
+    font-size: 18pt;
+    text-align: center;
+
+}
+
+#winLoseDiv
+{
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    font-size: 16pt;
+    line-height: 20pt;
+    background-color: blanchedalmond;
+    width: 28%;
+
+}
+
+#scoreDiv
+{
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    font-size: 16pt;
+    line-height: 20pt;
+    background-color: blanchedalmond;
+    width: 28%;
+}
+
+.crystal
+{
+    margin: 25px 25px;
+}
+
+#usrVal
+{
+    padding-top: 20px;
+    font-size: 18pt;
+    text-align: center;
+}
